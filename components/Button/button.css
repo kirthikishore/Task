@@ -1,0 +1,64 @@
+.btn {
+  @apply rounded-full absolute h-14 flex-none order-1 flex-grow-0;
+  box-shadow: #E5E4FB;
+
+}
+
+.btn:hover:not(:active) {
+  box-shadow: inset 0px 0px 6px rgba(19, 18, 24, 0.2);
+}
+
+.btn:active {
+  box-shadow: 3px 6px 10px rgba(35, 34, 58, 0.2);
+border-radius: 44px;
+}
+
+.btn:disabled {
+  background-color: #E5E4FB;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.btn-txt {
+  @apply static w-auto h-6 font-sans not-italic font-bold text-xl leading-6 flex-none order-1 flex-grow-0 mt-0 mb-0 ml-2 mr-2;
+}
+
+.icon {
+  @apply h-3.5 w-3.5 rounded-none !important;
+}
+
+/* button background color */
+
+.btn-bg-purple {
+  @apply bg-indigo-700;
+}
+.btn-bg-purple:hover:not(:active) {
+  @apply bg-indigo-500;
+}
+
+.btn-bg-white {
+  @apply bg-white;
+}
+.btn-bg-white:hover:not(:active) {
+  @apply bg-gray-300;
+}
+
+/* button text color */
+
+.txt-purple {
+  @apply text-indigo-700;
+}
+
+.txt-white {
+  @apply text-white;
+}
+
+/* icon color */
+
+.icon-purple {
+  @apply text-indigo-700;
+}
+
+.icon-white {
+  @apply text-white;
+}
